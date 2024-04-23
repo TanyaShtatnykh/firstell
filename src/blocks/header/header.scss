@@ -15,7 +15,7 @@
     width: 100%;
     max-width: 1440px;
     margin: 0 auto;
-    padding: 28px 120px;
+    padding: 20px 120px;
   }
   &__burger-btn {
     display: none;
@@ -100,12 +100,11 @@
   }
   @media screen and (max-width: 767.98px) {
     &__area {
-      flex-direction: column;
-      padding: 20px 60px 0px;
+      flex-wrap: wrap;
+      padding: 12px 60px 0px;
     }
     &__logo-link {
       display: flex;
-      margin-bottom: 20px;
     }
     &__burger-btn {
       position: relative;
@@ -229,7 +228,7 @@
       padding: 12px 12px 0;
     }
     &__logo {
-      max-width: 165px;
+      max-width: 140px;
       height: auto;
     }
     &__burger-btn {

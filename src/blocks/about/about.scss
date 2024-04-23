@@ -47,7 +47,7 @@
       font-size: px-to-em(14);
     }
   }
-  @media screen and (max-width: 1199.98px) {
+  @media screen and (max-width: 991.98px) {
     &__icon {
       max-width: 80px;
       max-height: 80px;
@@ -72,8 +72,8 @@
     &__list {
       grid-template-columns: repeat(2, 1fr);
       margin: 0 auto;
-      padding: 10px 12px 60px;
-      gap: 10px;
+      padding: 12px 12px 60px;
+      gap: 16px;
     }
     &__item {
       flex-direction: row;
@@ -92,7 +92,7 @@
   }
   @media screen and (max-width: 359.98px) {
     &__list {
-      padding: 10px 12px 32px;
+      padding: 12px 12px 32px;
     }
     &__icon {
       max-width: 28px;

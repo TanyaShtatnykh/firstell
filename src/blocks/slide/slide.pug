@@ -1,0 +1,7 @@
+mixin slide(image, name, title, text)
+  .slide&attributes(attributes)
+    img(src=`img/${image}`, alt="").slide__image
+    .slide__content
+      p.slide__name=name
+      h3.slide__title=title
+      p.slide__description=text
