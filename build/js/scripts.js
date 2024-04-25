@@ -6,7 +6,7 @@ $(function () {
   })
 });
 $(function () {
-  $('.owl-carousel').owlCarousel({
+  $('.portfolio__slider').owlCarousel({
     items: 1,
     loop: true,
     autoplay: true,
@@ -29,10 +29,34 @@ $(function () {
 });
 
 $(function () {
+  $('.pricelist__container').owlCarousel({
+    loop: true,
+    autoplay: false,
+    center: true,
+    smartSpeed: 1000,
+    nav: true,
+    navText: ["<img src='img/arrow-back.svg'>", "<img src='img/arrow-next.svg'>"],
+    responsive: {
+      0: {
+        items: 1,
+        autoHeight:true,
+      },
+      768: {
+        items: 2,
+        autoHeight:false,
+      },
+      992: {
+        items: 3,
+      }
+    }
+  });
+});
+
+
+$(function () {
   $('.services__btn').on('click', function() {
     $('.service').toggleClass('service--open');
     $('.services__btn').toggleClass('services__btn--open');
   });
 });
-
 

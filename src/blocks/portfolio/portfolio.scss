@@ -6,7 +6,7 @@
     width: 100%;
     max-width: 1440px;
     margin: 0 auto;
-    padding: 0 120px 150px;
+    padding: 0 120px 190px;
   }
   &__title {
     margin-bottom: 52px;
@@ -62,12 +62,12 @@
   }
   @media screen and (max-width: 1399.98px) {
     &__area {
-      padding: 0px 100px 120px;
+      padding: 0px 100px 160px;
     }
   }
   @media screen and (max-width: 1199.98px) {
     &__area {
-      padding: 0px 80px 100px;
+      padding: 0px 80px 140px;
     }
     &__title {
       margin-bottom: 32px;
@@ -80,7 +80,7 @@
   }
   @media screen and (max-width: 767.98px) {
     &__area {
-      padding: 0px 80px 80px;
+      padding: 0px 80px 120px;
     }
     &__title {
       font-size: px-to-em(28);

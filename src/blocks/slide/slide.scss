@@ -66,6 +66,9 @@
     &__content {
       padding: 0 0 12px 0;
     }
+    &__image {
+      border-radius: 0 40px 0 40px;
+    }
     &__name {
       font-size: px-to-em(10);
     }
