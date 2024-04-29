@@ -5,6 +5,7 @@ $(function () {
     center: true,
     smartSpeed: 1000,
     nav: true,
+    dots: false,
     navText: ["<img src='img/arrow-back.svg'>", "<img src='img/arrow-next.svg'>"],
     responsive: {
       0: {

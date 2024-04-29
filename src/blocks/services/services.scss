@@ -6,7 +6,6 @@
   max-width: 1440px;
   margin: 0 auto;
   padding: 0px 120px 150px;
-  background-color: #fcfcfc;
 
   &__title {
     margin-bottom: 52px;
@@ -92,6 +91,7 @@
     }
   }
   @media screen and (max-width: 359.98px) {
+    padding: 0px 12px 32px;
     &__title {
       font-size: px-to-em(16);
     }

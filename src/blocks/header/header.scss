@@ -17,6 +17,13 @@
     margin: 0 auto;
     padding: 20px 120px;
   }
+  &__logo-link {
+    display: flex;
+  }
+  &__logo {
+    max-width: 212px;
+    height: auto;
+  }
   &__burger-btn {
     display: none;
   }

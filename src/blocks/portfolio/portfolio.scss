@@ -26,13 +26,11 @@
       content: "";
       position: absolute;
       display: flex;
-      width: 100%;
-      max-width: 1190px;
+      width: 80%;
       height: auto;
-      top: 102px;
+      top: 10%;
       right: 0;
       bottom: 0;
-      left: 10px;
       border: 9px solid transparent;
       border-radius: 0px 100px 0px 100px;
       background: linear-gradient(#fcfcfc,#fcfcfc) padding-box, linear-gradient(to bottom right, #515267, #DF1B36) border-box;
@@ -71,6 +69,11 @@
     }
     &__title {
       margin-bottom: 32px;
+    }
+    &__slider {
+      &::after {
+        top: 20%;
+      }
     }
   }
   @media screen and (max-width: 991.98px) {
@@ -127,5 +130,10 @@
     .owl-dot.active {
       opacity: 1;
     }
-  } 
+  }
+  @media screen and (max-width: 359.98px) {
+    &__area {
+      padding: 0px 12px 32px;
+    }
+  }
 }

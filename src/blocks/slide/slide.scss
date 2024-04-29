@@ -1,18 +1,22 @@
 .slide {
   position: relative;
+  display: flex;
+  align-items: flex-start;
   max-width: 100%;
   &__image {
-    max-width: 92%;
+    max-width: 60%;
+    height: auto;
     margin: 0 0 22px 10px;
     border-radius: 0 100px 0 100px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    object-fit: cover;
   }
   &__content {
-    padding: 0 0 50px 92px;
+    padding: 80px 0 50px 20px;
   }
   &__name {
-    margin-bottom: 12px;
-    font-size: 1em;
+    margin-bottom: 10px;
+    font-size: px-to-em(14);
     line-height: lh-to-pct(23, 16);
     font-weight: 500;
     text-transform: uppercase;
@@ -20,7 +24,7 @@
   }
   &__title {
     margin-bottom: 12px;
-    font-size: px-to-em(26);
+    font-size: px-to-em(24);
     line-height: lh-to-pct(36, 26);
     font-weight: 800;
     text-transform: uppercase;
@@ -28,14 +32,17 @@
   }
   &__description {
     max-width: 94%;
-    font-size: px-to-em(26);
+    font-size: px-to-em(22);
     line-height: lh-to-pct(36, 26);
     font-weight: 400;
     color: rgba(81, 82, 103, 0.8);
   }
   @media screen and (max-width: 1199.98px) {
+    &__content {
+      padding: 100px 0 60px 10px;
+    }
     &__name {
-      font-size: px-to-em(14);
+      font-size: px-to-em(12);
     }
     &__title {
       font-size: px-to-em(20);
@@ -44,12 +51,27 @@
       font-size: px-to-em(16);
     }
   }
+  @media screen and (max-width: 991.98px) {
+    flex-direction: column;
+    &__image {
+      max-width: 70%;
+    }
+    &__content {
+      align-self: flex-end;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      max-width: 70%;
+      margin-top: -30px;
+      padding: 0 20px 60px 0;
+    }
+    &__name, &__title, &__description {
+      text-align: right;
+    }
+  }
   @media screen and (max-width: 767.98px) {
     &__image {
       margin-bottom: 12px;
-    }
-    &__content {
-      padding: 0 0 50px 62px;
     }
     &__name, &__title {
       margin-bottom: 8px;
@@ -64,10 +86,17 @@
       margin: 0 0 12px 0;
     }
     &__content {
+      align-self: flex-start;
+      align-items: flex-start;
+      max-width: 100%;
+      margin-top: 0;
       padding: 0 0 12px 0;
     }
     &__image {
       border-radius: 0 40px 0 40px;
+    }
+    &__name, &__title, &__description {
+      text-align: left;
     }
     &__name {
       font-size: px-to-em(10);
