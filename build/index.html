@@ -12,7 +12,7 @@
   </head>
   <body>
       <header class="header">
-        <div class="header__area"><a class="header__logo-link" href="/"><img class="header__logo" src="img/logo.png" alt=""></a>
+        <div class="header__area"><a class="header__logo-link" href="./"><img class="header__logo" src="img/logo.png" alt=""></a>
           <div class="header__burger-btn">
             <div class="header__burger">
               <div class="header__line"></div>
@@ -26,14 +26,13 @@
           </div>
           <nav class="header__menu">
             <ul class="header__menu-list">
-              <li class="header__menu-item"><a class="header__menu-link" href="#">Home</a></li>
-              <li class="header__menu-item"><a class="header__menu-link" href="#">Service</a></li>
-              <li class="header__menu-item"><a class="header__menu-link" href="#">Price</a></li>
-              <li class="header__menu-item"><a class="header__menu-link" href="#">Portfolio</a></li>
-              <li class="header__menu-item"><a class="header__menu-link" href="#">Reviews</a></li>
+              <li class="header__menu-item"><a class="header__menu-link" href="#home">Home</a></li>
+              <li class="header__menu-item"><a class="header__menu-link" href="#service">Service</a></li>
+              <li class="header__menu-item"><a class="header__menu-link" href="#price">Price</a></li>
+              <li class="header__menu-item"><a class="header__menu-link" href="#portfolio">Portfolio</a></li>
+              <li class="header__menu-item"><a class="header__menu-link" href="#reviews">Reviews</a></li>
             </ul>
-          </nav>
-          <button class="header__btn" type="button">
+          </nav><a class="header__btn" href="#discuss">
             Discuss the project<svg width="30.000000" height="30.000000" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 	<desc>
 			Created with Pixso.
@@ -41,12 +40,11 @@
 	<defs/>
 	<path id="Vector" d="M15 5.03C15 4.37 14.87 3.71 14.61 3.1C14.36 2.49 13.99 1.94 13.53 1.47C13.06 1 12.51 0.63 11.9 0.38C11.29 0.13 10.64 0 9.98 0L5.07 0C4.41 -0.01 3.75 0.11 3.14 0.36C2.52 0.61 1.96 0.98 1.49 1.45C1.01 1.91 0.64 2.47 0.38 3.09C0.13 3.7 0 4.36 0 5.03C0 5.7 0.13 6.36 0.38 6.97C0.64 7.59 1.01 8.14 1.49 8.61C1.96 9.08 2.52 9.45 3.14 9.7C3.75 9.95 4.41 10.07 5.07 10.06L6.03 10.06L6.03 12.5C6.03 12.5 15 11.28 15 5.03ZM10.43 18.33C10.43 20.17 8.94 21.66 7.11 21.66C5.28 21.66 3.79 20.17 3.79 18.33C3.79 16.49 5.28 15 7.11 15C8.94 15 10.43 16.49 10.43 18.33ZM7.11 23.33C4.76 23.33 0.06 24.52 0.06 26.88L0.06 30L14.17 30L14.17 26.88C14.17 24.52 9.47 23.33 7.11 23.33ZM22.88 21.66C24.71 21.66 26.2 20.17 26.2 18.33C26.2 16.49 24.71 15 22.88 15C21.05 15 19.56 16.49 19.56 18.33C19.56 20.17 21.05 21.66 22.88 21.66ZM22.88 23.33C20.52 23.33 15.82 24.52 15.82 26.88L15.82 30L29.93 30L29.93 26.88C29.93 24.52 25.23 23.33 22.88 23.33ZM21.67 0.83C20.34 0.83 19.06 1.36 18.12 2.3C17.18 3.25 16.66 4.53 16.66 5.86C16.66 12.11 24.62 13.33 24.62 13.33L24.62 10.9L24.92 10.9C25.58 10.91 26.24 10.78 26.85 10.53C27.47 10.28 28.03 9.91 28.5 9.45C28.98 8.98 29.35 8.42 29.61 7.8C29.86 7.19 30 6.53 30 5.86C30 5.2 29.86 4.54 29.61 3.92C29.35 3.31 28.98 2.75 28.5 2.28C28.03 1.81 27.47 1.44 26.85 1.19C26.24 0.94 25.58 0.82 24.92 0.83L21.67 0.83Z" fill="#515267" fill-opacity="1.000000" fill-rule="nonzero"/>
 </svg>
-
-          </button>
+</a>
         </div>
       </header>
     <main>
-        <section class="welcome">
+        <section class="welcome" id="home">
           <div class="welcome__area">
             <h1 class="welcome__title">We can influent your money</h1>
             <p class="welcome__subtitle">Сreate high-quality presentations that work for you</p><a class="welcome__btn" href="#">
@@ -62,46 +60,50 @@
         </section>
         <section class="about">
           <ul class="about__list">
-            <li class="about__item"><img class="about__icon" src="img/about-icon1.png" alt="">
+            <li class="about__item">
+              <div class="about__icon-box"><img class="about__icon" src="img/about-icon1.png" alt=""></div>
               <p class="about__text">$8.2mln<br>fundraising for startups</p>
             </li>
-            <li class="about__item"><img class="about__icon" src="img/about-icon2.png" alt="">
+            <li class="about__item">
+              <div class="about__icon-box"><img class="about__icon" src="img/about-icon2.png" alt=""></div>
               <p class="about__text">Top Rater<br>on service exchanges</p>
             </li>
-            <li class="about__item"><img class="about__icon" src="img/about-icon3.png" alt="">
+            <li class="about__item">
+              <div class="about__icon-box"><img class="about__icon" src="img/about-icon3.png" alt=""></div>
               <p class="about__text">10+ years<br>work experience</p>
             </li>
-            <li class="about__item"><img class="about__icon" src="img/about-icon4.png" alt="">
+            <li class="about__item">
+              <div class="about__icon-box"><img class="about__icon" src="img/about-icon4.png" alt=""></div>
               <p class="about__text">5,000 slides<br>was created</p>
             </li>
           </ul>
         </section>
-        <section class="services">
+        <section class="services" id="service">
           <h2 class="services__title">How we can be of service to&nbsp;you</h2>
           <div class="services__area">
               <div class="service">
-                <div class="service__area">
+                <div class="service__area"><img class="service__icon" src="img/service-icon1.svg" alt="">
                   <div class="service__content">
                     <h3 class="service__title">Sales &amp; Business &amp; Startup Presentations</h3>
                     <p class="service__text">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке.</p>
                   </div>
-                </div><a class="service__link" href="#">Discuss</a>
+                </div><a class="service__link" href="#discuss">Discuss</a>
               </div>
               <div class="service">
-                <div class="service__area">
+                <div class="service__area"><img class="service__icon" src="img/service-icon1.svg" alt="">
                   <div class="service__content">
                     <h3 class="service__title">Pitch deck for investors &amp; Fundraising</h3>
                     <p class="service__text">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке.</p>
                   </div>
-                </div><a class="service__link" href="#">Discuss</a>
+                </div><a class="service__link" href="#discuss">Discuss</a>
               </div>
               <div class="service">
-                <div class="service__area">
+                <div class="service__area"><img class="service__icon" src="img/service-icon1.svg" alt="">
                   <div class="service__content">
                     <h3 class="service__title">Education &amp; Training &amp; Master classes Presentations</h3>
                     <p class="service__text">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке.</p>
                   </div>
-                </div><a class="service__link" href="#">Discuss</a>
+                </div><a class="service__link" href="#discuss">Discuss</a>
               </div>
               <div class="service">
                 <div class="service__area">
@@ -109,7 +111,7 @@
                     <h3 class="service__title">Redesign of any presentation</h3>
                     <p class="service__text">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке.</p>
                   </div>
-                </div><a class="service__link" href="#">Discuss</a>
+                </div><a class="service__link" href="#discuss">Discuss</a>
               </div>
               <div class="service">
                 <div class="service__area">
@@ -117,7 +119,7 @@
                     <h3 class="service__title">Create Infographics &amp; Charts &amp; Data visualization</h3>
                     <p class="service__text">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке.</p>
                   </div>
-                </div><a class="service__link" href="#">Discuss</a>
+                </div><a class="service__link" href="#discuss">Discuss</a>
               </div>
               <div class="service">
                 <div class="service__area">
@@ -125,7 +127,7 @@
                     <h3 class="service__title">Make animation Pitch Deck</h3>
                     <p class="service__text">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке.</p>
                   </div>
-                </div><a class="service__link" href="#">Discuss</a>
+                </div><a class="service__link" href="#discuss">Discuss</a>
               </div>
               <div class="service">
                 <div class="service__area">
@@ -133,7 +135,7 @@
                     <h3 class="service__title">Company profile</h3>
                     <p class="service__text">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке.</p>
                   </div>
-                </div><a class="service__link" href="#">Discuss</a>
+                </div><a class="service__link" href="#discuss">Discuss</a>
               </div>
               <div class="service">
                 <div class="service__area">
@@ -141,7 +143,7 @@
                     <h3 class="service__title">Kickstarter content &amp; campaigns</h3>
                     <p class="service__text">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке.</p>
                   </div>
-                </div><a class="service__link" href="#">Discuss</a>
+                </div><a class="service__link" href="#discuss">Discuss</a>
               </div>
           </div>
           <button class="services__btn" type="button"> <span>See </span><svg width="13.000000" height="15.000000" viewBox="0 0 13 15" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -154,7 +156,7 @@
 <span>all</span>
           </button>
         </section>
-        <section class="portfolio">
+        <section class="portfolio" id="portfolio">
           <div class="portfolio__area">
             <h1 class="portfolio__title">We create commercially successful work</h1>
             <div class="portfolio__slider owl-carousel">
@@ -182,13 +184,13 @@
             </div>
           </div>
         </section>
-        <section class="pricelist">
+        <section class="pricelist" id="price">
           <div class="pricelist__area">
             <h2 class="pricelist__title">Fix the price of the project and start discussing now</h2>
             <ul class="pricelist__container owl-carousel">
               <li class="pricelist__info">
                 <div class="pricelist__heading">
-                  <h3 class="pricelist__category-title">Name of the category</h3><a class="pricelist__link" href="#">
+                  <h3 class="pricelist__category-title">Name of the category</h3><a class="pricelist__link" href="#discuss">
                     Discuss the project<svg width="22.000000" height="22.000000" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 	<desc>
 			Created with Pixso.
@@ -215,7 +217,7 @@
               </li>
               <li class="pricelist__info">
                 <div class="pricelist__heading">
-                  <h3 class="pricelist__category-title">Name of the category</h3><a class="pricelist__link" href="#">
+                  <h3 class="pricelist__category-title">Name of the category</h3><a class="pricelist__link" href="#discuss">
                     Discuss the project<svg width="22.000000" height="22.000000" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 	<desc>
 			Created with Pixso.
@@ -250,7 +252,7 @@
               </li>
               <li class="pricelist__info">
                 <div class="pricelist__heading">
-                  <h3 class="pricelist__category-title">Name of the category</h3><a class="pricelist__link" href="#">
+                  <h3 class="pricelist__category-title">Name of the category</h3><a class="pricelist__link" href="#discuss">
                     Discuss the project<svg width="22.000000" height="22.000000" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 	<desc>
 			Created with Pixso.
@@ -281,7 +283,7 @@
               </li>
               <li class="pricelist__info">
                 <div class="pricelist__heading">
-                  <h3 class="pricelist__category-title">Name of the category</h3><a class="pricelist__link" href="#">
+                  <h3 class="pricelist__category-title">Name of the category</h3><a class="pricelist__link" href="#discuss">
                     Discuss the project<svg width="22.000000" height="22.000000" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 	<desc>
 			Created with Pixso.
@@ -332,7 +334,7 @@
             </ul>
           </div>
         </section>
-        <section class="reviews">
+        <section class="reviews" id="reviews">
           <h2 class="reviews__title">We want to be №1 in achieving our clients' goals</h2>
           <ul class="reviews__slides owl-carousel">
             <li class="reviews__slide">
@@ -408,7 +410,7 @@
             </ul>
           </div>
         </section>
-        <section class="form">
+        <section class="form" id="discuss">
           <h2 class="form__title">We want to be №1 in achieving our clients' goals</h2>
           <h3 class="form__subtitle">Describe your project so we can prepare a proposal</h3>
           <form class="form__form">

@@ -1,7 +1,7 @@
 mixin header(modifier)
   header.header&attributes(attributes)
     .header__area
-      a.header__logo-link(href="/"): img.header__logo(src="img/logo.png", alt="")
+      a.header__logo-link(href="./"): img.header__logo(src="img/logo.png", alt="")
       .header__burger-btn
         .header__burger
           .header__line
@@ -12,11 +12,11 @@ mixin header(modifier)
           .header__line
       nav.header__menu
         ul.header__menu-list
-          li.header__menu-item: a.header__menu-link(href="#") Home
-          li.header__menu-item: a.header__menu-link(href="#") Service
-          li.header__menu-item: a.header__menu-link(href="#") Price
-          li.header__menu-item: a.header__menu-link(href="#") Portfolio
-          li.header__menu-item: a.header__menu-link(href="#") Reviews
-      button(type="button").header__btn
+          li.header__menu-item: a.header__menu-link(href="#home") Home
+          li.header__menu-item: a.header__menu-link(href="#service") Service
+          li.header__menu-item: a.header__menu-link(href="#price") Price
+          li.header__menu-item: a.header__menu-link(href="#portfolio") Portfolio
+          li.header__menu-item: a.header__menu-link(href="#reviews") Reviews
+      a.header__btn(href="#discuss")
         | Discuss the project
         include ./img/header-btn-icon.svg
