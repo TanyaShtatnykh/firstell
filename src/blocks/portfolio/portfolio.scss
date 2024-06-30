@@ -18,9 +18,6 @@
     color: #DF1B36;
   }
   &__slider {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     max-width: 100%;
     &::after {
       content: "";

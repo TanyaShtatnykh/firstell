@@ -12,11 +12,12 @@ mixin header(modifier)
           .header__line
       nav.header__menu
         ul.header__menu-list
-          li.header__menu-item: a.header__menu-link(href="#home") Home
-          li.header__menu-item: a.header__menu-link(href="#service") Service
-          li.header__menu-item: a.header__menu-link(href="#price") Price
-          li.header__menu-item: a.header__menu-link(href="#portfolio") Portfolio
-          li.header__menu-item: a.header__menu-link(href="#reviews") Reviews
-      a.header__btn(href="#discuss")
+          li.header__menu-item: a.header__menu-link(href="./#home") Home
+          li.header__menu-item: a.header__menu-link(href="./#service") Service
+          li.header__menu-item: a.header__menu-link(href="./#price") Price
+          li.header__menu-item: a.header__menu-link(href="portfolio.html") Portfolio
+          li.header__menu-item: a.header__menu-link(href="./#portfolio") Cases
+          li.header__menu-item: a.header__menu-link(href="./#reviews") Reviews
+      a.header__btn(href="./#discuss")
         | Discuss the project
         include ./img/header-btn-icon.svg

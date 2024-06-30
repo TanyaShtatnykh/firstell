@@ -1,0 +1,26 @@
+mixin p-slider(title, number)
+  section.p-slider&attributes()(id=number)
+    .p-slider__heading
+      h2.p-slider__title=title
+      a.p-slider__discuss-btn(href="#discuss")
+        | Discuss the project
+        include ./img/discuss-icon.svg 
+    .p-slider__area.swiper
+      .swiper-wrapper
+        .swiper-slide
+          +p-slide
+        .swiper-slide
+          +p-slide
+        .swiper-slide
+          +p-slide
+        .swiper-slide
+          +p-slide
+        .swiper-slide
+          +p-slide
+        .swiper-slide
+          +p-slide
+      .p-slider__navigation
+        .p-slider__nav-btn.swiper-prev
+          include ./img/price-arrow-back.svg
+        .p-slider__nav-btn.swiper-next
+          include ./img/price-arrow-next.svg

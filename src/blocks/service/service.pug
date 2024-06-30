@@ -1,4 +1,4 @@
-mixin service(icon, title, text)
+mixin service(icon, title, text, number)
   .service&attributes(attributes)
     .service__area
       if icon
@@ -6,4 +6,4 @@ mixin service(icon, title, text)
       .service__content
         h3.service__title=title
         p.service__text=text
-    a.service__link(href="#discuss") Discuss
+    a.service__link(href=`portfolio.html#${number}`) Discuss

@@ -5,18 +5,57 @@ $(function () {
   $('.header__burger-btn').on('click', function() {
     $(this).toggleClass('header__burger-btn--open');
     $('.header__menu').toggleClass('header__menu--open');
+  });
+  $('.header__menu-link').on('click', function() {
+    if ($('.header__burger-btn').hasClass('header__burger-btn--open')) {
+      $('.header__burger-btn').removeClass('header__burger-btn--open');
+      $('.header__menu').removeClass('header__menu--open');
+    }
   })
+});
+
+const childrenSwiper = new Swiper('.p-slide__slider', {
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  loop: true,
+  preloadImages: false,
+  lazy: {
+    loadOnTransitionStart: false,
+  },
+  effect: 'flip',
+  flipEffect: {
+    slideShadows: true,
+    limitRoration: true,
+  },
+});
+const parentSwiper = new Swiper('.p-slider__area', {
+  navigation: {
+    nextEl: '.swiper-next',
+    prevEl: '.swiper-prev',
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    1200: {
+      slidesPerView: 3,
+    }
+  }
 });
 
 $(function () {
   $('.portfolio__slider').owlCarousel({
     items: 1,
-    loop: true,
-    autoplay: true,
+    loop: false,
+    autoplay: false,
     smartSpeed: 1500,
-    autoplayTimeout: 4000,
-    autoplayHoverPause: true,
     autoHeight:true,
+    infiniti: false,
     navText: ["<img src='img/arrow-back.svg'>", "<img src='img/arrow-next.svg'>"],
     responsive: {
       0: {
@@ -55,6 +94,7 @@ $(function () {
     }
   });
 });
+
 
 
 $(function () {
