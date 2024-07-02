@@ -13,39 +13,24 @@ $(function () {
     }
   })
 });
-
 const childrenSwiper = new Swiper('.p-slide__slider', {
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
+  navigation: {
+    nextEl: '.p-slide__arrow--next',
+    prevEl: '.p-slide__arrow--prev'
   },
   loop: true,
   preloadImages: false,
   lazy: {
     loadOnTransitionStart: false,
   },
-  effect: 'flip',
-  flipEffect: {
-    slideShadows: true,
-    limitRoration: true,
-  },
 });
-const parentSwiper = new Swiper('.p-slider__area', {
-  navigation: {
-    nextEl: '.swiper-next',
-    prevEl: '.swiper-prev',
-  },
-  breakpoints: {
-    0: {
-      slidesPerView: 1,
-    },
-    768: {
-      slidesPerView: 2,
-    },
-    1200: {
-      slidesPerView: 3,
-    }
-  }
+
+
+$(function () {
+  $('.p-slider__more-btn').on('click', function() {
+    $(this).parent('.p-slider').toggleClass('p-slider--open');
+    $(this).toggleClass('p-slider__more-btn--open');
+  });
 });
 
 $(function () {
@@ -94,7 +79,6 @@ $(function () {
     }
   });
 });
-
 
 
 $(function () {

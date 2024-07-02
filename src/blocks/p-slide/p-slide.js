@@ -1,16 +1,11 @@
 const childrenSwiper = new Swiper('.p-slide__slider', {
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
+  navigation: {
+    nextEl: '.p-slide__arrow--next',
+    prevEl: '.p-slide__arrow--prev'
   },
   loop: true,
   preloadImages: false,
   lazy: {
     loadOnTransitionStart: false,
-  },
-  effect: 'flip',
-  flipEffect: {
-    slideShadows: true,
-    limitRoration: true,
   },
 });
