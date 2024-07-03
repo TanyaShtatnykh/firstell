@@ -10,7 +10,7 @@ $(function () {
 
   for (let i = 0; i < services.length; i++) {
     slides = services[i].querySelectorAll('.p-slide');
-    if (slides.length > 3) {
+    if (slides.length > 6) {
       let moreBtn = services[i].querySelector('.p-slider__more-btn');
       moreBtn.classList.add('p-slider__more-btn--visible')
     }
